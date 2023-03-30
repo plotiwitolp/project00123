@@ -1,0 +1,265 @@
+/* reset */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+h2,
+h3 {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited,
+h2:visited,
+h3:visited {
+  color: inherit;
+}
+a:active, a:focus,
+h2:active,
+h2:focus,
+h3:active,
+h3:focus {
+  color: inherit;
+  outline: none;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  border: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+input,
+borderarea {
+  outline: none;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  margin: 0;
+}
+
+html,
+body {
+  line-height: 1;
+}
+
+/*-------- PRIMER START --------*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #283944;
+  color: #e8f3fb;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: #fffcae;
+}
+a:visited, a:active, a:focus {
+  color: #fffcae;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 50px;
+  background-color: #1d303e;
+  color: #e8f3fb;
+  border-radius: 0 0 7px 7px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+footer {
+  border-radius: 7px 7px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  min-height: 150px;
+  background-color: #1d303e;
+  color: #e8f3fb;
+}
+
+header,
+main,
+footer {
+  padding: 10px 30px;
+  line-height: 25px;
+}
+
+main#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+}
+
+.entry-content {
+  padding: 5px;
+  margin: auto;
+  border-radius: 7px 0 0 7px;
+}
+
+blockquote {
+  background-color: #1d303e;
+  color: #e8f3fb;
+  padding: 10px 30px;
+  line-height: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+ul.menu li a {
+  font-weight: 600;
+  letter-spacing: initial;
+}
+
+div.syntaxhighlighter {
+  border-radius: 7px;
+  padding: 1.5em 2em !important;
+}
+
+div.syntaxhighlighter .toolbar {
+  display: none !important;
+}
+
+div.syntaxhighlighter table td.code .line,
+div.syntaxhighlighter table td.gutter .line {
+  padding: 5px 3px !important;
+}
+
+header.entry-header {
+  padding: 0;
+  width: 100%;
+}
+
+h2.entry-title a {
+  text-align: center;
+  min-height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-block__item {
+  padding: 10px 20px;
+  border: 1px solid #3f596c;
+  margin: 2px;
+  border-radius: 7px;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 10px 30px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border: 1px solid #3f596c;
+  border-radius: 7px;
+}
+article .post-thumbnail {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+article .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+h2.entry-title {
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.entry-header {
+  border-radius: 7px;
+}
+
+.wpcourses-breadcrumbs {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wpcourses-breadcrumbs:hover {
+  opacity: 1;
+}

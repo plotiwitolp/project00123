@@ -1,0 +1,219 @@
+/* reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+a,
+h2,
+h3 {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+  &:active,
+  &:focus {
+    color: inherit;
+    outline: none;
+  }
+}
+
+ol,
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  border: none;
+  object-fit: contain;
+}
+input,
+borderarea {
+  outline: none;
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  margin: 0;
+}
+html,
+body {
+  line-height: 1;
+}
+/*-------- PRIMER START --------*/
+
+$bgkColor_1: #1d303e;
+$txtColor_1: #12212b;
+$bgColor_2: #283944;
+$txtColor_2: #e8f3fb;
+$borderColor: #3f596c;
+$btnColor: #fffcae;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bgColor_2;
+  color: $txtColor_2;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+a {
+  color: $btnColor;
+  &:visited,
+  &:active,
+  &:focus {
+    color: $btnColor;
+  }
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  // border-left: 1px solid $borderColor;
+  // border-right: 1px solid $borderColor;
+}
+header {
+  min-height: 50px;
+  background-color: $bgkColor_1;
+  color: $txtColor_2;
+  border-radius: 0 0 7px 7px;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  border-radius: 7px 7px 0 0;
+  flex: 0 0 auto;
+  min-height: 150px;
+  background-color: $bgkColor_1;
+  color: $txtColor_2;
+}
+header,
+main,
+footer {
+  padding: 10px 30px;
+  line-height: 25px;
+}
+
+//
+main#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+}
+.entry-content {
+  padding: 5px;
+  margin: auto;
+  border-radius: 7px 0 0 7px;
+}
+blockquote {
+  background-color: $bgkColor_1;
+  color: $txtColor_2;
+  padding: 10px 30px;
+  line-height: 25px;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+ul.menu li a {
+  font-weight: 600;
+  letter-spacing: initial;
+}
+// start syntaxhighlighter
+div.syntaxhighlighter {
+  border-radius: 7px;
+  padding: 1.5em 2em !important;
+}
+div.syntaxhighlighter .toolbar {
+  display: none !important;
+}
+div.syntaxhighlighter table td.code .line,
+div.syntaxhighlighter table td.gutter .line {
+  padding: 5px 3px !important;
+}
+// end syntaxhighlighter
+
+header.entry-header {
+  padding: 0;
+  width: 100%;
+}
+h2.entry-title a {
+  text-align: center;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.page-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.page-block__item {
+  padding: 10px 20px;
+  border: 1px solid $borderColor;
+  margin: 2px;
+  border-radius: 7px;
+}
+h2 {
+  text-align: center;
+  margin: 15px 10px 30px;
+}
+article {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid $borderColor;
+  border-radius: 7px;
+  .post-thumbnail {
+    width: 120px;
+    display: flex;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+    }
+  }
+}
+h2.entry-title {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.entry-header {
+  border-radius: 7px;
+  // border-right: 1px solid $borderColor;
+  // border-top: 1px solid $borderColor;
+  // border-bottom: 1px solid $borderColor;
+}
+.wpcourses-breadcrumbs {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+.wpcourses-breadcrumbs:hover {
+  opacity: 1;
+}

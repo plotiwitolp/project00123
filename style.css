@@ -1,0 +1,18 @@
+/**
+ * Theme Name:  Project00123
+ *
+ * Version:     1.0
+ */
+
+/* start */
+body {
+  font-family: sans-serif;
+}
+ul.menu {
+  display: flex;
+  gap: 25px;
+  font-size: 17px;
+}
+ul.menu li.current-menu-item {
+  text-decoration: underline;
+}
