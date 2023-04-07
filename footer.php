@@ -1,3 +1,4 @@
+<?php get_sidebar(); ?>
 </main>
 
 <footer>

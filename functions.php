@@ -58,3 +58,18 @@ function wpcourses_breadcrumb($sep = ' > ')
     return $out;
 }
 // end хлебные крошки
+
+
+function mytheme_widgets_init()
+{
+    register_sidebar(array(
+        'name'          => __('Sidebar', 'mytheme'),
+        'id'            => 'sidebar-1',
+        'description'   => __('Add widgets here to appear in your sidebar.', 'mytheme'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ));
+}
+add_action('widgets_init', 'mytheme_widgets_init');
