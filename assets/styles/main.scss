@@ -85,7 +85,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  max-width: 1280px;
+  max-width: 1580px;
   margin: 0 auto;
 }
 header {
@@ -107,10 +107,12 @@ footer {
 header,
 main,
 footer {
-  padding: 10px 30px;
+  padding: 10px 0;
   line-height: 25px;
 }
-
+header {
+  padding: 10px 20px;
+}
 //
 main#main {
   display: grid;
@@ -215,4 +217,30 @@ h2.entry-title {
 main {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 20px;
+}
+div#secondary {
+  border: 1px solid $borderColor;
+  border-radius: 7px;
+  padding: 20px;
+  max-width: 230px;
+  height: fit-content;
+}
+p.wp-block-tag-cloud a {
+  margin-bottom: 7px;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: #1d303e;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.download-link {
+  border-radius: 7px;
+  display: inline-block;
+  background-color: #1d303e;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+  width: fit-content;
+  border: 1px solid $borderColor;
 }

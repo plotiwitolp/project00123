@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
-<?php the_content(); ?>
-
+<div class="page">
+    <?php the_content(); ?>
+</div>
 <?php get_footer(); ?>

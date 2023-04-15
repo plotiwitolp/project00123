@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
-<?php echo wpcourses_breadcrumb(' / '); ?>
+<div class="page">
+    <?php echo wpcourses_breadcrumb(' / '); ?>
 
 
-<h1><?php the_title(); ?></h1>
-<?php the_content(); ?>
-
+    <h1><?php the_title(); ?></h1>
+    <?php the_content(); ?>
+</div>
 <?php get_footer(); ?>
